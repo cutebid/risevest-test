@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  background: var(--foreground);
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+
+ 
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  height: 90px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99999;
+  background-color: white;
+
+}
+
+.hero-section{
+  height: calc(100vh - 90px);
+}
+
+.image-hover{
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.image-hover:hover img {
+  transform: scale(1.1);
+}
+
+.regulation-section {
+  background-image: url("/regulation-bg.png");
+  background-size: 100% 100%; 
+  background-position: center; 
+  background-repeat: no-repeat;
+ 
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.benefits {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  gap: 24px;
+  margin: 48px 0px 80px;
+}
+
+.benefits-card {
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0px 12px 24px 0px #40BBC326;
+
+ }
+
+ .button:hover {
+  background-color: #4A5050;
+  color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3 ease-in-out;
+}
+
+.link:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navlink{
+  position: relative;
+}
+
+.navlink.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #07969E; 
+  border-radius: 50%;
+}
+
+.benefits-card:hover {
+  border-color: #ccc; 
+  border-width: 1px;
+  transition: border-color 0.3s ease-in-out, border-width 0.3s ease-in-out;
+}
+
+ @keyframes bounceUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceDiagonal {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bounceCenter {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Use bounce in place without directional movement */
+@keyframes bounceInPlace {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
