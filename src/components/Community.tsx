@@ -10,10 +10,7 @@ const Community = () => {
             Join The Rise Community
           </h1>
           <p className="text-base mt-2 mb-6 lg:my-6 hidden lg:block">
-            If you want to go far, go together. Our Telegram community surrounds
-            you with others who can help you along your financial journey with
-            tips, support, advice and learning. It's completely free and open to
-            new and seasoned investors.
+            If you want to go far, go together. Our Telegram community surrounds you with others who can help you along your financial journey with tips, support, advice and learning. Its completely free and open to new and seasoned investors.
           </p>
           <p className="text-base mt-2 mb-6 lg;my-6 block lg:hidden">
           If you want to go far, go together.

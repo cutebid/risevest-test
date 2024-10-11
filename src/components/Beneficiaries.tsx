@@ -1,5 +1,3 @@
-import { arrow_forward } from "@/utils/svg";
-import Link from "next/link";
 import React from "react";
 
 const Beneficiaries = () => {

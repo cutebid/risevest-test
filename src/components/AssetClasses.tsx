@@ -73,6 +73,7 @@ const AssetClasses = () => {
             <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center image-container">
               <img
                 src={imgSrc}
+                alt="images"
                 className="w-[85px] h-[85px] rounded-full object-cover"
               />
             </div>
