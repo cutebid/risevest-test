@@ -26,14 +26,14 @@ const MobileNav: React.FC<MobileNavProps> = ({ setShowMenu }) => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
-      className=" block bg-white md:hidden w-screen pb-8 px-0"
+      className=" block bg-white lg:hidden w-screen pb-8 px-4"
     >
       <div>
         <ul className=" flex flex-col">
           {navLinks.map(({ id, textLink, link }) => (
             <li
               onClick={() => handleLinks(link)}
-              className=" text-neutral_50 py-4 text-lg hover:text-primary  border-b-4 border-neutral-50 cursor-pointer"
+              className="py-4 text-base hover:text-teal  border-b-4 border-neutral-50 cursor-pointer"
               key={id}
             >
               {textLink}

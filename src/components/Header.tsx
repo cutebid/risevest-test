@@ -45,7 +45,7 @@ const Header = () => {
         <div className=" lg:hidden" onClick={() => setShowMenu(!showMenu)}>
           {menu_icon}
         </div>
-        <div className="absolute top-20">
+        <div className="absolute left-0 top-20">
         <AnimatePresence>{showMenu && <MobileNav  setShowMenu={setShowMenu} />}</AnimatePresence>
       </div>
       </nav>

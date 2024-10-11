@@ -101,7 +101,7 @@ const HomePage = () => {
           <div className="w-14 h-14 rounded-full bg-teal_3 absolute bottom-40 right-48 animate-bounceInPlace"></div>
         </div>
         <p className="text-lg font-bold text-[#7B8DA8] block sm:hidden px-4 mt-10">We are supported by</p>
-        <div className="flex items-center sm:justify-center mt-2 sm:mt-10 gap-x-2 overflow-auto px-4 sm:px-0">
+        <div className="flex items-center sm:justify-center mt-2 sm:mt-10 gap-x-2  px-4 sm:px-0 partners">
           {partners.map(({ width, height, imgSrc, id }) => (
             <img
               key={id}

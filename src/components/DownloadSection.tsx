@@ -19,11 +19,11 @@ const DownloadSection = () => {
   return (
     <div className="bg-teal_4 rounded-[50px] mx-4 xl:mx-20 h-[600px] md:h-auto mt-10">
       <div className="flex items-center justify-between px-4 flex-col md:flex-row xl:px-20 pt-10">
-        <div className="text-center md:text-start md:w-1/2">
-          <p className="text-teal text-base font-medium">
+        <div className=" sm:w-4/5 text-center md:text-start md:w-1/2">
+          <p className="text-teal text-lg sm:text-base font-medium">
           Download The Rise App
           </p>
-          <h1 className="text-[32px] font-semibold my-4 ">
+          <h1 className="text-xl sm:text-2xl md:text-[32px] font-semibold my-4 ">
           Join our 100,000 users investing and setting long term goals!
           </h1>
           <p className="text-base font-medium"> Dollar investments that help you grow.</p>
