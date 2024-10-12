@@ -2,16 +2,39 @@ import { arrow_forward } from "@/utils/svg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { assets } from "@/static/data";
 
 const AssetClasses = () => {
- 
+  const assets = [
+    {
+      id: 1,
+      title: "Stocks",
+      imgSrc: "/ellipse3.png",
+      bgColor: "bg-orange_4",
+      linkText: "Learn how Stocks work ",
+      info: "We help you invest and manage your money by investing in our portfolio of 30 high-growth stocks across the US market with equity portfolio of power stocks.",
+    },
+    {
+      id: 2,
+      title: "Real Estate",
+      imgSrc: "/ellipse2.png",
+      bgColor: "bg-indigo_4",
+      linkText: "Learn how Real Estate work",
+      info: "Our Real Estate plan is the sweet middle. Best for those who want a balance of good returns and medium risk. This plan invests in rented buildings in the US.",
+    },
+    {
+      id: 3,
+      title: "Fixed Income",
+      imgSrc: "/ellipse1.png",
+      bgColor: "bg-teal_4",
+      linkText: " Learn how Fixed Income work",
+      info: "A low-risk asset perfect for anyone who wants to protect their money in a secure, appreciating currency, i.e. the dollar. For people who want to protect their hard-earned money from inflation while earning steady returns. ",
+    },
+  ];
+
   return (
     <div className="mt-12 medium:mt-0">
       <div className="text-center">
-        <h1 className="font-semibold text-3xl md:text-[40px]">
-          Asset Classes
-        </h1>
+        <h1 className="font-semibold text-3xl md:text-[40px]">Asset Classes</h1>
         <p className="text-base font-medium mt-1">
           It’s your money, choose where you invest it
         </p>
