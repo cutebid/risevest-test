@@ -25,8 +25,7 @@ const StartSaving = () => {
             src="/savings-image.png"
             alt="phone"
             width={316}
-            height={508}
-            objectFit="cover"
+            height={508}     
             className="w-full object-cover"
           />
         </div>

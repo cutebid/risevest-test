@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useRouter } from "next/router";
+import { navLinks } from "@/static/data";
 
 interface MobileNavProps {
   setShowMenu: (show: boolean) => void;
@@ -8,14 +9,7 @@ interface MobileNavProps {
 
 const MobileNav: React.FC<MobileNavProps> = ({ setShowMenu }) => {
   const router = useRouter();
-  const navLinks = [
-    { id: 1, textLink: "Home", link: "/", arrow: false },
-    { id: 2, textLink: "Products", link: "#", arrow: true },
-    { id: 3, textLink: "Investment Club", link: "#", arrow: false },
-    { id: 4, textLink: "Blog", link: "#",  arrow: false },
-    { id: 5, textLink: "About Us", link: "#",  arrow: false },
-    { id: 6, textLink: "FAQs", link: "#",  arrow: false },
-  ];
+
   const handleLinks = (link: string) => {
     router.push(link);
     setShowMenu(false);

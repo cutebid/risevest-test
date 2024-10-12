@@ -1,50 +1,26 @@
 import Link from "next/link";
 import Image from "next/image";
+import { down_arrow_slant } from "@/utils/svg";
+import { exploreLinks, productLinks,contactLinks,otherLinks } from "@/static/data";
 
-const exploreLinks = [
-  { id: 1, textLink: "Investmet Club", link: "#" },
-  { id: 2, textLink: "Blog", link: "#" },
-];
 
-const productLinks = [
-  { id: 1, textLink: "Rise App", link: "/" },
-  { id: 2, textLink: "Wallets", link: "#" },
-  { id: 3, textLink: "Asset Classes", link: "#" },
-];
-
-const contactLinks = [
-  { id: 1, textLink: "0818 714 7405", link: "tel:08187147405" },
-  { id: 2, textLink: "hello@rise.capital", link: "mailto:hello@rise.capital" },
-  { id: 3, textLink: "Newsletter", link: "/" },
-  { id: 4, textLink: "Instagram", link: "/" },
-  { id: 5, textLink: "Twitter", link: "/" },
-];
-
-const otherLinks = [
-  { id: 1, textLink: "About Us", link: "#" },
-  { id: 2, textLink: "Careers", link: "#" },
-  { id: 3, textLink: "FAQs", link: "#" },
-  { id: 4, textLink: "Contact Info", link: "#" },
-  { id: 5, textLink: "Press", link: "#" },
-  { id: 5, textLink: "Rise Impact", link: "#" },
-];
 
 const FooterSection = ({
   title,
   links,
 }: {
   title: string;
-  links: { id: number; textLink: string; link: string }[];
+  links: { id: number; textLink: string; link: string , arrow:boolean}[];
 }) => (
   <div>
     <h4 className="font-semibold text-base mb-2">{title}</h4>
     <div>
-      {links.map(({ id, textLink, link }) => (
+      {links.map(({ id, textLink, link, arrow }) => (
         <p
-          className="text-dark_gray my-4 link cursor-pointer text-base hover:text-primary"
+          className="my-4 link cursor-pointer text-base"
           key={id}
         >
-          <Link href={link}>{textLink}</Link>
+          <Link className="flex items-center gap-x-2" href={link}>{textLink} <span> {arrow && down_arrow_slant}</span></Link>
         </p>
       ))}
     </div>
@@ -66,7 +42,7 @@ const Footer = () => {
                   className=" my-4 link cursor-pointer text-base hover:text-primary"
                   key={id}
                 >
-                  <Link href={link}>{textLink}</Link>
+                  <Link href={link}>{textLink} </Link>
                 </p>
               ))}
             </div>

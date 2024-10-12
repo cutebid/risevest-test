@@ -1,23 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { apple_icon, playstore_icon } from "@/utils/svg";
 import { motion } from "framer-motion";
+import { downloadDetails } from "@/static/data";
 
 const DownloadSection = () => {
-  const downloadDetails = [
-    {
-      id: 1,
-      icon: apple_icon,
-      name: "App Store",
-    },
-    {
-      id: 2,
-      icon: playstore_icon,
-      name: "Google Play",
-    },
-  ];
+
   return (
-    <div className="bg-teal_4 rounded-[50px] mx-4 xl:mx-20 h-[600px] md:h-auto mt-10">
+    <div className="bg-teal_4 rounded-[50px] mx-4 xl:mx-20 h-[500px] sm:h-[600px] md:h-auto mt-10">
       <div className="flex items-center justify-between px-4 flex-col md:flex-row xl:px-20 pt-10">
         <div className=" sm:w-4/5 text-center md:text-start md:w-1/2">
           <p className="text-teal text-lg sm:text-base font-medium">

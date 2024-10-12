@@ -15,7 +15,7 @@
 }
 
 body {
-  background: var(--foreground);
+  background:white;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   padding: 0;
@@ -130,8 +130,8 @@ p {
 }
 
 .partners {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
 }
 
  @keyframes bounceUpDown {
@@ -182,7 +182,6 @@ p {
   }
 }
 
-/* Use bounce in place without directional movement */
 @keyframes bounceInPlace {
   0% {
     transform: translateY(0);

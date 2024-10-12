@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { down_arrow, menu_icon} from "@/utils/svg";
-
+import { navLinks } from "@/static/data";
 import { useRouter } from "next/router";
 import { AnimatePresence } from "framer-motion";
 import MobileNav from "./MobileNav";
@@ -11,14 +11,7 @@ import MobileNav from "./MobileNav";
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const router = useRouter()
-  const navLinks = [
-    { id: 1, textLink: "Home", link: "/", arrow: false },
-    { id: 2, textLink: "Products", link: "#", arrow: true },
-    { id: 3, textLink: "Investment Club", link: "#", arrow: false },
-    { id: 4, textLink: "Blog", link: "#",  arrow: false },
-    { id: 5, textLink: "About Us", link: "#",  arrow: false },
-    { id: 6, textLink: "FAQs", link: "#",  arrow: false },
-  ];
+
   
   return (
     <div className="relative">

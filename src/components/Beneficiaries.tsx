@@ -1,36 +1,8 @@
 import React from "react";
+import { testimonials } from "@/static/data";
 
 const Beneficiaries = () => {
-  const testimonials = [
-    {
-      id: 1,
-      name: "Lade",
-      imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvJaoIeJQU_V9rL_ZII61whWyqSFbmMgTgwQ&s",
-      info: "I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.",
-    },
-    {
-      id: 2,
-      name: "Jesse",
-      imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0KehqXBrMLd32HsfjDoaq098WeNA0b3g_2A&s",
-      info: "I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.",
-    },
-    {
-      id: 3,
-      title: "Raye",
-      imgSrc:
-        "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      info: "I don’t want to invest in separate stocks because I’m not a financial expert and I would rather trust my money in the hands of people like Rise who are skilled and knowledgeable.",
-    },
-    {
-      id: 4,
-      name: "Rayo",
-      imgSrc:
-        "https://www.shutterstock.com/image-photo/happy-mid-aged-business-man-600nw-2307212331.jpg",
-      info: "A low-risk asset perfect for anyone who wants to protect their money in a secure, appreciating currency, i.e. the dollar. For people who want to protect their hard-earned money from inflation while earning steady returns. ",
-    },
-  ];
+
   return (
     <div className="my-16 mx-8 lg:mx-0">
       <div className="text-center lg:w-3/5 mx-auto">

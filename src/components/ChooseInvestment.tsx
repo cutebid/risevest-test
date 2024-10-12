@@ -20,8 +20,8 @@ const ChooseInvestment: React.FC<ChooseInvestmentProps> = ({ flexDirection, titl
     <div className="px-8 xl:px-28">
       <div className={`flex flex-col-reverse  items-center  justify-between ${flexDirection}`}>
         <div className={`md:w-1/2  ${marginTextClass} text-center md:text-start`}>
-          <h1 className="text-xl md:text-3xl font-semibold hidden md:block">{title}</h1>
-          <h1 className="text-xl md:text-3xl font-semibold block md:hidden">{mobileTitle}</h1>
+          <h1 className="text-xl md:text-[32px] font-semibold hidden md:block">{title}</h1>
+          <h1 className="text-xl md:text-[32px] font-semibold block md:hidden">{mobileTitle}</h1>
           <p className={`text-base font-medium  mt-2 ${widthClass}`}>
             {info}
           </p>
@@ -40,7 +40,7 @@ const ChooseInvestment: React.FC<ChooseInvestmentProps> = ({ flexDirection, titl
               alt="image"
               width={480}
               height={460}
-              className={`w-[280px] h-[268px] md:w-[480px] md:h-[460px] ${marginClass}`}
+              className={`w-[280px] h-[268px] md:w-[480px] md:h-[460px] ${marginClass} object-cover`}
             />
           </motion.div>
         </div>
